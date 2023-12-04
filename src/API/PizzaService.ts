@@ -6,16 +6,14 @@ export default class PizzaService {
 
     // return response from the mockapi api
     const response = await axios.get<Item[]>(
-      "https://6560dbff83aba11d99d1a040.mockapi.io/pizza/items?limit=4&page=" +
-        currentPage
-    );
+      `https://6560dbff83aba11d99d1a040.mockapi.io/pizza/items?limit=4&page=${currentPage}`);
     console.log(typeof response.data)
     return response;
   }
+  // return Item element from mockapi API
   static async getItem(id: String) {
     const response = await axios.get<Item>(
-      "https://6560dbff83aba11d99d1a040.mockapi.io/pizza/items/" + id
-    );
+      `https://6560dbff83aba11d99d1a040.mockapi.io/pizza/items/${id}`);
     return response;
   }
 }
