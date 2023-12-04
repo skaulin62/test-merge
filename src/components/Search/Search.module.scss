@@ -1,0 +1,41 @@
+.root {
+    position: relative;
+    left: -100px;
+
+ 
+
+}
+
+.input {
+    border: 1px solid lightgray;
+    border-radius: 30px;
+    font-size: 16px;
+    width: 350px;
+    padding: 12px 25px;
+    padding-left: 45px;
+
+    &:focus {
+        border: 1px solid gray;
+    }
+}
+
+.svg {
+    left: 17px;
+    top:14px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    opacity: 0.5;
+}
+
+.close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 17px;
+    top: 15px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
